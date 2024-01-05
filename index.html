@@ -1,12 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <title>HTML Advance Features</title>
-</head>
-<body>
-   <h2>Hello World</h2>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>HTML CSS Advance Features</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML CSS Advance Features</h1>
+    </header>
+    <main>
+      <section class="section">
+        <h2 class="section-title"><code>&lt;ol&gt; </code> tag's attributes</h2>
+        <!-- <p class="section-description"></p> -->
+        <div class="section-code">
+          <div class="code-block">
+            <h4>HTML</h4>
+            <pre>
+               <code>
+               &lt;ol start=""  type="" reversed="" &gt;
+                  &lt;li&gt;Orange &lt;/li&gt;
+               &lt;/ol&gt;
+               </code>
+            </pre>
+          </div>
+          <!-- <div class="code-block">CSS</div> -->
+          <div class="output">
+            <h4>Output</h4>
+            <ol start="3" type="1" reversed>
+               <li>Orange</li>
+               <li>Apple</li> 
+            </ol> 
+            <ol start="3" type="i">
+               <li>Orange</li>
+               <li>Apple</li> 
+            </ol>
+            <ol start="3" type="I">
+               <li>Orange</li>
+               <li>Apple</li> 
+            </ol>
+            <ol start="3" type="A">
+               <li>Orange</li>
+               <li>Apple</li> 
+            </ol>
+            <ol start="3" type="a">
+               <li>Orange</li>
+               <li>Apple</li> 
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Editable block</h2>
+        <p class="section-description">Allow user to edit text in the browser by using "contenteditable="true" attributes</p>
+        <div class="section-code">
+          <div class="code-block">
+            <h4>HTML</h4>
+            <pre>
+               <code>
+               &lt;div contenteditable="true" &gt; 
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               &lt;/div&gt;
+               </code>
+            </pre>
+          </div>
+          <!-- <div class="code-block">CSS</div> -->
+          <div class="output">
+            <h4>Output</h4>
+             <div contenteditable="true">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dignissimos!
+             </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section-title">&lt;mark&gt;</h2>
+        <p class="section-description">mark text without using css</p>
+        <div class="section-code">
+          <div class="code-block">
+            <h4>HTML</h4>
+            <pre>
+               <code>
+               &lt;p&gt; 
+               HTML is the  &lt;mark&gt;BOSS &lt;/mark&gt; in the web.
+               &lt;/p&gt;
+               </code>
+            </pre>
+          </div>
+          <!-- <div class="code-block">CSS</div> -->
+          <div class="output">
+            <h4>Output</h4>
+             <p>HTML is the <mark>BOSS</mark> in the web.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Accordion</h2>
+        <p class="section-description">Create accordion without JavaScript</p>
+        <div class="section-code">
+          <div class="code-block">
+            <h4>HTML</h4>
+            <pre>
+               <code>
+                  &lt;details&gt;
+                     &lt;summary&gt;
+                        How to order?
+                     &lt;/summary&gt;
+                     &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, suscipit.&lt;/p&gt;
+                     &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, suscipit.&lt;/p&gt;
+                  &lt;/details&gt; 
+               </code>
+            </pre>
+          </div>
+          <!-- <div class="code-block">CSS</div> -->
+          <div class="output">
+            <h4>Output</h4>
+             <details>
+               <summary>
+                  How to order?
+               </summary>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, suscipit.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, suscipit.</p>
+             </details>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section-title">accept attribute</h2>
+        <p class="section-description">we can allow user to upload only a specific type of file</p>
+        <div class="section-code">
+          <div class="code-block">
+            <h4>HTML</h4>
+            <pre>
+               <code>
+                  
+                  &lt;input type="file" accept=".png, .pdf"&gt; 
+                
+               </code>
+            </pre>
+          </div>
+          <!-- <div class="code-block">CSS</div> -->
+          <div class="output">
+            <h4>Output</h4>
+             <input type="file" accept=".png,.pdf"></p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section-title">dir</h2>
+        <p class="section-description">rtl or ltr</p>
+        <div class="section-code">
+          <div class="code-block">
+            <h4>HTML</h4>
+            <pre>
+               <code> 
+                  &lt;p dir="rtl"&gt;HTML is the Boss&lt;/p &gt;  
+               </code>
+            </pre>
+          </div>
+          <!-- <div class="code-block">CSS</div> -->
+          <div class="output">
+            <h4>Output</h4> 
+            <p dir="rtl">HTML is the Boss</p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section-title">lazy loading</h2>
+        <p class="section-description">Allow lazy loading without js</p>
+        <div class="section-code">
+          <div class="code-block">
+            <h4>HTML</h4>
+            <pre>
+               <code>  
+                  &lt;img loading="lazy" src="images/test.jpg" alt=""&gt;
+               </code>
+            </pre>
+          </div>
+          <!-- <div class="code-block">CSS</div> -->
+          <div class="output">
+            <h4>Output</h4> 
+            <img loading="lazy" width="300" src="images/test.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section-title">add thumbnail in Video tag</h2>
+        <p class="section-description"> </p>
+        <div class="section-code">
+          <div class="code-block">
+            <h4>HTML</h4>
+            <pre>
+               <code>  
+                  &lt;img loading="lazy" src="images/test.jpg" alt=""&gt;
+               </code>
+            </pre>
+          </div>
+          <!-- <div class="code-block">CSS</div> -->
+          <div class="output">
+            <h4>Output</h4> 
+            <video src="https://www.youtube.com/watch?v=Q52Zcq09Hrg" poster="images/test.png"></video>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section-title">kbd</h2>
+        <p class="section-description"> </p>
+        <div class="section-code">
+          <div class="code-block">
+            <h4>HTML</h4>
+            <pre>
+               <code> 
+                  Open New Tab by &lt;kbd&gt;ctrl&lt;/kbd&gt; +  &lt;kbd&gt;tab&gt&lt;/kbd&gt;
+               </code>
+            </pre>
+          </div>
+          <!-- <div class="code-block">CSS</div> -->
+          <div class="output">
+            <h4>Output</h4> 
+            <p>Open new tab by clicking on <kbd>ctrl</kbd> + <kbd>tab</kbd></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

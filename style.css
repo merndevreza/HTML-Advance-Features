@@ -1,0 +1,61 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+   font-family: 'Ubuntu', sans-serif;
+}
+header{
+   padding: 20px 0;
+   text-align: center;
+   background: rgb(193, 246, 193);
+   color: green;
+}
+main{
+   padding: 0 4%;
+}
+.section{
+   padding: 20px;
+   margin: 30px 0;
+   border-radius: 10px;
+   border: 2px solid rgb(120, 170, 120); 
+}
+.section-title{
+font-size: 22px;
+color: green;
+margin-bottom: 10px;
+}
+.section-description{
+   margin-bottom: 10px;
+}
+.section-code h4, .output h4{
+   padding-bottom: 5px;
+   border-bottom: 1px solid  rgb(166, 206, 166);
+}
+.output ol{
+   border-bottom: 1px solid rgb(169, 200, 169);
+}
+.section-code{
+   display: grid; 
+   grid-template-columns: repeat(2,1fr);
+   gap: 20px;
+}
+.section-code .output{ 
+   background-color: rgb(212, 248, 212);
+   padding: 10px 30px 10px;
+   border-radius: 10px;
+   font-size: 18px;
+}
+.section-code .code-block{ 
+   background-color: rgb(212, 248, 212);
+   padding: 10px;
+   border-radius: 10px;
+   font-size: 18px; 
+}
+.section-code .code-block pre{ 
+   white-space: wrap;
+}
